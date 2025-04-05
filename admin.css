@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #29C6B5;
+  --dark-color: #02101D;
+  --light-color: #FFFFFF;
+  --error-color: #FF5252;
+  --success-color: #4CAF50;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-header h1 {
+  color: var(--primary-color);
+}
+
+.btn-logout {
+  padding: 8px 15px;
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #E53935;
+}
+
+.admin-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.add-user-section, .user-list-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.user-list {
+  margin-top: 15px;
+}
+
+.user-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-role {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.user-actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-delete {
+  background-color: var(--error-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .admin-content {
+    grid-template-columns: 1fr;
+  }
+}

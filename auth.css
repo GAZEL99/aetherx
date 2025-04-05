@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #29C6B5;
+  --dark-color: #02101D;
+  --light-color: #FFFFFF;
+  --error-color: #FF5252;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 20px;
+}
+
+.auth-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-color);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1FB3A1;
+}
+
+.error-message {
+  color: var(--error-color);
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 20px;
+  }
+}

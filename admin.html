@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - AETHER MARKET</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <header class="admin-header">
+      <h1>Admin Panel</h1>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </header>
+    
+    <div class="admin-content">
+      <section class="add-user-section">
+        <h2>Tambah Akun Baru</h2>
+        <form id="addUserForm">
+          <div class="form-group">
+            <input type="text" id="newUsername" placeholder="Username" required>
+          </div>
+          <div class="form-group">
+            <input type="password" id="newPassword" placeholder="Password" required>
+          </div>
+          <div class="form-group">
+            <select id="newRole" required>
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Tambah Akun</button>
+        </form>
+      </section>
+      
+      <section class="user-list-section">
+        <h2>Daftar Pengguna</h2>
+        <div class="user-list" id="userList"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="admin.js" type="module"></script>
+</body>
+</html>
